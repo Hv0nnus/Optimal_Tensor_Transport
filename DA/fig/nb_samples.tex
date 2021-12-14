@@ -1,0 +1,59 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}[scale=\scaleepsilon]
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.5,0.09)},
+  anchor=south,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Number of samples \samples{}},
+xmin=-48.95, xmax=1049.95,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Target accuracy},
+ymin=58.3874751205594, ymax=81.4487635732295,
+ytick style={color=black}
+]
+\path [fill=color0, fill opacity=0.2]
+(axis cs:1,59.4357155047717)
+--(axis cs:1,66.5976178285616)
+--(axis cs:5,69.2885712720327)
+--(axis cs:10,71.6672078763212)
+--(axis cs:50,74.4560744724468)
+--(axis cs:100,77.120831354775)
+--(axis cs:500,79.2363930763166)
+--(axis cs:1000,80.4005231890172)
+--(axis cs:1000,74.2494768109828)
+--(axis cs:1000,74.2494768109828)
+--(axis cs:500,72.6302735903501)
+--(axis cs:100,69.5125019785584)
+--(axis cs:50,65.7772588608865)
+--(axis cs:10,62.7661254570122)
+--(axis cs:5,61.428095394634)
+--(axis cs:1,59.4357155047717)
+--cycle;
+
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+1 63.0166666666667
+5 65.3583333333333
+10 67.2166666666667
+50 70.1166666666667
+100 73.3166666666667
+500 75.9333333333333
+1000 77.325
+};
+\addlegendentry{OTT}
+\end{axis}
+
+\end{tikzpicture}

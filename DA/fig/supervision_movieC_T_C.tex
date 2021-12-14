@@ -1,0 +1,163 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}[scale=\scaleepsilonW]
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+\definecolor{color4}{rgb}{0.580392156862745,0.403921568627451,0.741176470588235}
+\definecolor{color5}{rgb}{0.549019607843137,0.337254901960784,0.294117647058824}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Number of labels in target},
+xmin=-2.5, xmax=52.5,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Target accuracy},
+ymin=44.4902379092044, ymax=100.757607718609,
+ytick style={color=black}
+]
+\path [fill=color0, fill opacity=0.2]
+(axis cs:0,96.7807417596433)
+--(axis cs:0,97.3192582403567)
+--(axis cs:1,97.2)
+--(axis cs:5,97.8192582403567)
+--(axis cs:10,98.2)
+--(axis cs:50,98.2)
+--(axis cs:50,97.9)
+--(axis cs:50,97.9)
+--(axis cs:10,97.1)
+--(axis cs:5,97.2807417596433)
+--(axis cs:1,96.9)
+--(axis cs:0,96.7807417596433)
+--cycle;
+
+\path [fill=color1, fill opacity=0.2]
+(axis cs:0,81.5)
+--(axis cs:0,81.5)
+--(axis cs:1,83)
+--(axis cs:5,83)
+--(axis cs:10,85)
+--(axis cs:50,93)
+--(axis cs:50,93)
+--(axis cs:50,93)
+--(axis cs:10,85)
+--(axis cs:5,83)
+--(axis cs:1,83)
+--(axis cs:0,81.5)
+--cycle;
+
+\path [fill=color2, fill opacity=0.2]
+(axis cs:0,76.5)
+--(axis cs:0,76.5)
+--(axis cs:1,78)
+--(axis cs:5,77.5)
+--(axis cs:10,81.5)
+--(axis cs:50,89.5)
+--(axis cs:50,89.5)
+--(axis cs:50,89.5)
+--(axis cs:10,81.5)
+--(axis cs:5,77.5)
+--(axis cs:1,78)
+--(axis cs:0,76.5)
+--cycle;
+
+\path [fill=color3, fill opacity=0.2]
+(axis cs:0,77)
+--(axis cs:0,77)
+--(axis cs:1,77)
+--(axis cs:5,77)
+--(axis cs:10,77)
+--(axis cs:50,77)
+--(axis cs:50,77)
+--(axis cs:50,77)
+--(axis cs:10,77)
+--(axis cs:5,77)
+--(axis cs:1,77)
+--(axis cs:0,77)
+--cycle;
+
+\path [fill=color4, fill opacity=0.2]
+(axis cs:0,47.0478456278137)
+--(axis cs:0,52.8521543721863)
+--(axis cs:1,69)
+--(axis cs:5,74.5)
+--(axis cs:10,80)
+--(axis cs:50,82.5)
+--(axis cs:50,82.5)
+--(axis cs:50,82.5)
+--(axis cs:10,80)
+--(axis cs:5,74.5)
+--(axis cs:1,69)
+--(axis cs:0,47.0478456278137)
+--cycle;
+
+\path [fill=color5, fill opacity=0.2]
+(axis cs:0,47.0478456278137)
+--(axis cs:0,52.8521543721863)
+--(axis cs:1,53.5620590963658)
+--(axis cs:5,55.8824910215354)
+--(axis cs:10,58.1397368307141)
+--(axis cs:50,79.124456470361)
+--(axis cs:50,73.375543529639)
+--(axis cs:50,73.375543529639)
+--(axis cs:10,52.0602631692859)
+--(axis cs:5,49.6175089784646)
+--(axis cs:1,47.5379409036342)
+--(axis cs:0,47.0478456278137)
+--cycle;
+
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+0 97.05
+1 97.05
+5 97.55
+10 97.65
+50 98.05
+};
+\addplot [semithick, color1, mark=triangle*, mark size=3, mark options={solid}]
+table {%
+0 81.5
+1 83
+5 83
+10 85
+50 93
+};
+\addplot [semithick, color2, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+0 76.5
+1 78
+5 77.5
+10 81.5
+50 89.5
+};
+\addplot [semithick, color3, mark=x, mark size=3, mark options={solid}]
+table {%
+0 77
+1 77
+5 77
+10 77
+50 77
+};
+\addplot [semithick, color4, mark=+, mark size=3, mark options={solid}]
+table {%
+0 49.95
+1 69
+5 74.5
+10 80
+50 82.5
+};
+\addplot [semithick, color5, mark=asterisk, mark size=3, mark options={solid}]
+table {%
+0 49.95
+1 50.55
+5 52.75
+10 55.1
+50 76.25
+};
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,178 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}[scale=\scaleepsilonW]
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+\definecolor{color4}{rgb}{0.580392156862745,0.403921568627451,0.741176470588235}
+\definecolor{color5}{rgb}{0.549019607843137,0.337254901960784,0.294117647058824}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.5,0.09)},
+  anchor=south,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Number of similar users known},
+xmin=-5, xmax=105,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Target accuracy},
+ymin=44.3496417551878, ymax=84.7298931641338,
+ytick style={color=black}
+]
+\path [fill=color0, fill opacity=0.2]
+(axis cs:0,65.6328431902491)
+--(axis cs:0,70.1671568097509)
+--(axis cs:5,82.8944271909999)
+--(axis cs:10,81.6316624790355)
+--(axis cs:50,81.3)
+--(axis cs:100,81.8)
+--(axis cs:100,80.9)
+--(axis cs:100,80.9)
+--(axis cs:50,80.9)
+--(axis cs:10,80.9683375209645)
+--(axis cs:5,81.1055728090001)
+--(axis cs:0,65.6328431902491)
+--cycle;
+
+\path [fill=color1, fill opacity=0.2]
+(axis cs:0,47)
+--(axis cs:0,47)
+--(axis cs:5,49.5)
+--(axis cs:10,51.5)
+--(axis cs:50,70)
+--(axis cs:100,80.5)
+--(axis cs:100,80.5)
+--(axis cs:100,80.5)
+--(axis cs:50,70)
+--(axis cs:10,51.5)
+--(axis cs:5,49.5)
+--(axis cs:0,47)
+--cycle;
+
+\path [fill=color2, fill opacity=0.2]
+(axis cs:0,60.5)
+--(axis cs:0,60.5)
+--(axis cs:5,60.5)
+--(axis cs:10,60.5)
+--(axis cs:50,60.5)
+--(axis cs:100,60.5)
+--(axis cs:100,60.5)
+--(axis cs:100,60.5)
+--(axis cs:50,60.5)
+--(axis cs:10,60.5)
+--(axis cs:5,60.5)
+--(axis cs:0,60.5)
+--cycle;
+
+\path [fill=color3, fill opacity=0.2]
+(axis cs:0,53)
+--(axis cs:0,53)
+--(axis cs:5,53)
+--(axis cs:10,53)
+--(axis cs:50,53)
+--(axis cs:100,53)
+--(axis cs:100,53)
+--(axis cs:100,53)
+--(axis cs:50,53)
+--(axis cs:10,53)
+--(axis cs:5,53)
+--(axis cs:0,53)
+--cycle;
+
+\path [fill=color4, fill opacity=0.2]
+(axis cs:0,53)
+--(axis cs:0,53)
+--(axis cs:5,53)
+--(axis cs:10,53)
+--(axis cs:50,53)
+--(axis cs:100,53)
+--(axis cs:100,53)
+--(axis cs:100,53)
+--(axis cs:50,53)
+--(axis cs:10,53)
+--(axis cs:5,53)
+--(axis cs:0,53)
+--cycle;
+
+\path [fill=color5, fill opacity=0.2]
+(axis cs:0,46.1851077283217)
+--(axis cs:0,52.9148922716782)
+--(axis cs:5,52.9148922716782)
+--(axis cs:10,52.9148922716782)
+--(axis cs:50,52.9148922716782)
+--(axis cs:100,52.9148922716782)
+--(axis cs:100,46.1851077283217)
+--(axis cs:100,46.1851077283217)
+--(axis cs:50,46.1851077283217)
+--(axis cs:10,46.1851077283217)
+--(axis cs:5,46.1851077283217)
+--(axis cs:0,46.1851077283217)
+--cycle;
+
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+0 67.9
+5 82
+10 81.3
+50 81.1
+100 81.35
+};
+\addlegendentry{OTT}
+\addplot [semithick, color1, mark=triangle*, mark size=3, mark options={solid}]
+table {%
+0 47
+5 49.5
+10 51.5
+50 70
+100 80.5
+};
+\addlegendentry{\COT{}}
+\addplot [semithick, color2, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+0 60.5
+5 60.5
+10 60.5
+50 60.5
+100 60.5
+};
+\addlegendentry{\gromov{}}
+\addplot [semithick, color3, mark=x, mark size=3, mark options={solid}]
+table {%
+0 53
+5 53
+10 53
+50 53
+100 53
+};
+\addlegendentry{\ScalableGW{}}
+\addplot [semithick, color4, mark=+, mark size=3, mark options={solid}]
+table {%
+0 53
+5 53
+10 53
+50 53
+100 53
+};
+\addlegendentry{\targetclassifier{}}
+\addplot [semithick, color5, mark=asterisk, mark size=3, mark options={solid}]
+table {%
+0 49.55
+5 49.55
+10 49.55
+50 49.55
+100 49.55
+};
+\addlegendentry{\smartrandom{}}
+\end{axis}
+
+\end{tikzpicture}

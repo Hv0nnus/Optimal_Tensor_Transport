@@ -1,0 +1,152 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}[scale=\scaleepsilonW]
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.5,0.91)},
+  anchor=north,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Number of samples \samples{}},
+xmin=-48.95, xmax=1049.95,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Distances rescaled between \(\displaystyle 0\) and \(\displaystyle 1\)},
+ymin=-0.0543181405331186, ymax=1.05370150353647,
+ytick style={color=black}
+]
+\path [fill=color0, fill opacity=0.2]
+(axis cs:1,0.996663025739419)
+--(axis cs:1,1.00333697426058)
+--(axis cs:5,0.930283694831376)
+--(axis cs:10,0.877758162230185)
+--(axis cs:50,0.785814880501579)
+--(axis cs:100,0.609996316957131)
+--(axis cs:500,0.225296905620376)
+--(axis cs:1000,0.00395361125722817)
+--(axis cs:1000,-0.00395361125722817)
+--(axis cs:1000,-0.00395361125722817)
+--(axis cs:500,0.0491123962662686)
+--(axis cs:100,0.422406567543276)
+--(axis cs:50,0.7604957739298)
+--(axis cs:10,0.870960436824535)
+--(axis cs:5,0.917392126671916)
+--(axis cs:1,0.996663025739419)
+--cycle;
+
+\path [fill=color1, fill opacity=0.2]
+(axis cs:1,0.507124986945838)
+--(axis cs:1,0.507124986945838)
+--(axis cs:5,0.507124986945838)
+--(axis cs:10,0.507124986945838)
+--(axis cs:50,0.507124986945838)
+--(axis cs:100,0.507124986945838)
+--(axis cs:500,0.507124986945838)
+--(axis cs:1000,0.507124986945838)
+--(axis cs:1000,0.507124986945838)
+--(axis cs:1000,0.507124986945838)
+--(axis cs:500,0.507124986945838)
+--(axis cs:100,0.507124986945838)
+--(axis cs:50,0.507124986945838)
+--(axis cs:10,0.507124986945838)
+--(axis cs:5,0.507124986945838)
+--(axis cs:1,0.507124986945838)
+--cycle;
+
+\path [fill=color2, fill opacity=0.2]
+(axis cs:1,0.00775552609151961)
+--(axis cs:1,0.00775552609151961)
+--(axis cs:5,0.00775552609151961)
+--(axis cs:10,0.00775552609151961)
+--(axis cs:50,0.00775552609151961)
+--(axis cs:100,0.00775552609151961)
+--(axis cs:500,0.00775552609151961)
+--(axis cs:1000,0.00775552609151961)
+--(axis cs:1000,0.00775552609151961)
+--(axis cs:1000,0.00775552609151961)
+--(axis cs:500,0.00775552609151961)
+--(axis cs:100,0.00775552609151961)
+--(axis cs:50,0.00775552609151961)
+--(axis cs:10,0.00775552609151961)
+--(axis cs:5,0.00775552609151961)
+--(axis cs:1,0.00775552609151961)
+--cycle;
+
+\path [fill=color3, fill opacity=0.2]
+(axis cs:1,0.00627131)
+--(axis cs:1,0.00627131)
+--(axis cs:5,0.00627131)
+--(axis cs:10,0.00627131)
+--(axis cs:50,0.00627131)
+--(axis cs:100,0.00627131)
+--(axis cs:500,0.00627131)
+--(axis cs:1000,0.00627131)
+--(axis cs:1000,0.00627131)
+--(axis cs:1000,0.00627131)
+--(axis cs:500,0.00627131)
+--(axis cs:100,0.00627131)
+--(axis cs:50,0.00627131)
+--(axis cs:10,0.00627131)
+--(axis cs:5,0.00627131)
+--(axis cs:1,0.00627131)
+--cycle;
+
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+1 1
+5 0.923837910751646
+10 0.87435929952736
+50 0.773155327215689
+100 0.516201442250204
+500 0.137204650943322
+1000 0
+};
+\addlegendentry{OTT}
+\addplot [semithick, color1, mark=triangle*, mark size=3, mark options={solid}]
+table {%
+1 0.507124986945838
+5 0.507124986945838
+10 0.507124986945838
+50 0.507124986945838
+100 0.507124986945838
+500 0.507124986945838
+1000 0.507124986945838
+};
+\addlegendentry{\COT{}}
+\addplot [semithick, color2, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+1 0.00775552609151961
+5 0.00775552609151961
+10 0.00775552609151961
+50 0.00775552609151961
+100 0.00775552609151961
+500 0.00775552609151961
+1000 0.00775552609151961
+};
+\addlegendentry{\gromov{}}
+\addplot [semithick, color3, mark=x, mark size=3, mark options={solid}]
+table {%
+1 0.00627131
+5 0.00627131
+10 0.00627131
+50 0.00627131
+100 0.00627131
+500 0.00627131
+1000 0.00627131
+};
+\addlegendentry{\ScalableGW{}}
+\end{axis}
+
+\end{tikzpicture}

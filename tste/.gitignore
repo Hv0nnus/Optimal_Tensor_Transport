@@ -1,0 +1,6 @@
+build
+*.so
+_tste.c
+cy_tste.c
+*.pyc
+*.c

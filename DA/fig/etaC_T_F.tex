@@ -1,0 +1,189 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}[scale=\scaleepsilonW]
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Class regularization \(\displaystyle \eta{}\) of OTDA},
+xmin=5.62341325190349e-05, xmax=17.7827941003892,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Target accuracy},
+ymin=48.3837792087968, ymax=83.9406366152664,
+ytick style={color=black}
+]
+\path [fill=color0, fill opacity=0.2]
+(axis cs:0.0001,79.7950124378879)
+--(axis cs:0.0001,81.8049875621121)
+--(axis cs:0.0005,81.5141428428543)
+--(axis cs:0.001,81.9782329983125)
+--(axis cs:0.005,82.3244158240633)
+--(axis cs:0.01,77.1206555615734)
+--(axis cs:0.05,70.8898979485566)
+--(axis cs:0.1,71)
+--(axis cs:0.5,70.7306623862918)
+--(axis cs:1,70.8433981132057)
+--(axis cs:5,70.9888194417316)
+--(axis cs:10,71.1634661099512)
+--(axis cs:10,68.7365338900488)
+--(axis cs:10,68.7365338900488)
+--(axis cs:5,69.2111805582684)
+--(axis cs:1,68.9566018867943)
+--(axis cs:0.5,69.0693376137082)
+--(axis cs:0.1,70)
+--(axis cs:0.05,69.9101020514434)
+--(axis cs:0.01,74.6793444384266)
+--(axis cs:0.005,76.9755841759367)
+--(axis cs:0.001,80.6217670016875)
+--(axis cs:0.0005,80.0858571571457)
+--(axis cs:0.0001,79.7950124378879)
+--cycle;
+
+\path [fill=color1, fill opacity=0.2]
+(axis cs:0.0001,72)
+--(axis cs:0.0001,72)
+--(axis cs:0.0005,70.5)
+--(axis cs:0.001,50)
+--(axis cs:0.005,50)
+--(axis cs:0.01,50)
+--(axis cs:0.05,50)
+--(axis cs:0.1,50)
+--(axis cs:0.5,50)
+--(axis cs:1,50)
+--(axis cs:5,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:5,50)
+--(axis cs:1,50)
+--(axis cs:0.5,50)
+--(axis cs:0.1,50)
+--(axis cs:0.05,50)
+--(axis cs:0.01,50)
+--(axis cs:0.005,50)
+--(axis cs:0.001,50)
+--(axis cs:0.0005,70.5)
+--(axis cs:0.0001,72)
+--cycle;
+
+\path [fill=color2, fill opacity=0.2]
+(axis cs:0.0001,68)
+--(axis cs:0.0001,68)
+--(axis cs:0.0005,62)
+--(axis cs:0.001,60)
+--(axis cs:0.005,61)
+--(axis cs:0.01,62.5)
+--(axis cs:0.05,68.5)
+--(axis cs:0.1,50)
+--(axis cs:0.5,50)
+--(axis cs:1,50)
+--(axis cs:5,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:5,50)
+--(axis cs:1,50)
+--(axis cs:0.5,50)
+--(axis cs:0.1,50)
+--(axis cs:0.05,68.5)
+--(axis cs:0.01,62.5)
+--(axis cs:0.005,61)
+--(axis cs:0.001,60)
+--(axis cs:0.0005,62)
+--(axis cs:0.0001,68)
+--cycle;
+
+\path [fill=color3, fill opacity=0.2]
+(axis cs:0.0001,63)
+--(axis cs:0.0001,63)
+--(axis cs:0.0005,63)
+--(axis cs:0.001,63)
+--(axis cs:0.005,63)
+--(axis cs:0.01,63)
+--(axis cs:0.05,63)
+--(axis cs:0.1,63)
+--(axis cs:0.5,63)
+--(axis cs:1,63)
+--(axis cs:5,63)
+--(axis cs:10,63)
+--(axis cs:10,63)
+--(axis cs:10,63)
+--(axis cs:5,63)
+--(axis cs:1,63)
+--(axis cs:0.5,63)
+--(axis cs:0.1,63)
+--(axis cs:0.05,63)
+--(axis cs:0.01,63)
+--(axis cs:0.005,63)
+--(axis cs:0.001,63)
+--(axis cs:0.0005,63)
+--(axis cs:0.0001,63)
+--cycle;
+
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+0.0001 80.8
+0.0005 80.8
+0.001 81.3
+0.005 79.65
+0.01 75.9
+0.05 70.4
+0.1 70.5
+0.5 69.9
+1 69.9
+5 70.1
+10 69.95
+};
+\addplot [semithick, color1, mark=triangle*, mark size=3, mark options={solid}]
+table {%
+0.0001 72
+0.0005 70.5
+0.001 50
+0.005 50
+0.01 50
+0.05 50
+0.1 50
+0.5 50
+1 50
+5 50
+10 50
+};
+\addplot [semithick, color2, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+0.0001 68
+0.0005 62
+0.001 60
+0.005 61
+0.01 62.5
+0.05 68.5
+0.1 50
+0.5 50
+1 50
+5 50
+10 50
+};
+\addplot [semithick, color3, mark=x, mark size=3, mark options={solid}]
+table {%
+0.0001 63
+0.0005 63
+0.001 63
+0.005 63
+0.01 63
+0.05 63
+0.1 63
+0.5 63
+1 63
+5 63
+10 63
+};
+\end{axis}
+
+\end{tikzpicture}

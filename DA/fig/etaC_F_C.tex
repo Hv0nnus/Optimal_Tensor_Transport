@@ -1,0 +1,189 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}[scale=\scaleepsilonW]
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Class regularization \(\displaystyle \eta{}\) of OTDA},
+xmin=5.62341325190349e-05, xmax=17.7827941003892,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Target accuracy},
+ymin=48.5828220211292, ymax=79.7607375562871,
+ytick style={color=black}
+]
+\path [fill=color0, fill opacity=0.2]
+(axis cs:0.0001,66.1936759485603)
+--(axis cs:0.0001,74.1063240514397)
+--(axis cs:0.0005,74.1616323509558)
+--(axis cs:0.001,73.1932125305523)
+--(axis cs:0.005,73.4057096285916)
+--(axis cs:0.01,73.9856776554368)
+--(axis cs:0.05,76.8282856857086)
+--(axis cs:0.1,78.3435595774163)
+--(axis cs:0.5,78.0811388300842)
+--(axis cs:1,77.9544571905188)
+--(axis cs:5,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:5,50)
+--(axis cs:1,75.1455428094812)
+--(axis cs:0.5,74.9188611699158)
+--(axis cs:0.1,74.8564404225837)
+--(axis cs:0.05,73.9717143142914)
+--(axis cs:0.01,68.4143223445632)
+--(axis cs:0.005,66.3942903714084)
+--(axis cs:0.001,67.3067874694477)
+--(axis cs:0.0005,65.3383676490442)
+--(axis cs:0.0001,66.1936759485603)
+--cycle;
+
+\path [fill=color1, fill opacity=0.2]
+(axis cs:0.0001,74)
+--(axis cs:0.0001,74)
+--(axis cs:0.0005,75)
+--(axis cs:0.001,50)
+--(axis cs:0.005,50)
+--(axis cs:0.01,50)
+--(axis cs:0.05,50)
+--(axis cs:0.1,50)
+--(axis cs:0.5,50)
+--(axis cs:1,50)
+--(axis cs:5,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:5,50)
+--(axis cs:1,50)
+--(axis cs:0.5,50)
+--(axis cs:0.1,50)
+--(axis cs:0.05,50)
+--(axis cs:0.01,50)
+--(axis cs:0.005,50)
+--(axis cs:0.001,50)
+--(axis cs:0.0005,75)
+--(axis cs:0.0001,74)
+--cycle;
+
+\path [fill=color2, fill opacity=0.2]
+(axis cs:0.0001,78)
+--(axis cs:0.0001,78)
+--(axis cs:0.0005,74.5)
+--(axis cs:0.001,74)
+--(axis cs:0.005,72.5)
+--(axis cs:0.01,75)
+--(axis cs:0.05,78)
+--(axis cs:0.1,50)
+--(axis cs:0.5,50)
+--(axis cs:1,50)
+--(axis cs:5,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:5,50)
+--(axis cs:1,50)
+--(axis cs:0.5,50)
+--(axis cs:0.1,50)
+--(axis cs:0.05,78)
+--(axis cs:0.01,75)
+--(axis cs:0.005,72.5)
+--(axis cs:0.001,74)
+--(axis cs:0.0005,74.5)
+--(axis cs:0.0001,78)
+--cycle;
+
+\path [fill=color3, fill opacity=0.2]
+(axis cs:0.0001,72)
+--(axis cs:0.0001,72)
+--(axis cs:0.0005,72)
+--(axis cs:0.001,72)
+--(axis cs:0.005,72)
+--(axis cs:0.01,72)
+--(axis cs:0.05,72)
+--(axis cs:0.1,72)
+--(axis cs:0.5,72)
+--(axis cs:1,72)
+--(axis cs:5,72)
+--(axis cs:10,72)
+--(axis cs:10,72)
+--(axis cs:10,72)
+--(axis cs:5,72)
+--(axis cs:1,72)
+--(axis cs:0.5,72)
+--(axis cs:0.1,72)
+--(axis cs:0.05,72)
+--(axis cs:0.01,72)
+--(axis cs:0.005,72)
+--(axis cs:0.001,72)
+--(axis cs:0.0005,72)
+--(axis cs:0.0001,72)
+--cycle;
+
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+0.0001 70.15
+0.0005 69.75
+0.001 70.25
+0.005 69.9
+0.01 71.2
+0.05 75.4
+0.1 76.6
+0.5 76.5
+1 76.55
+5 50
+10 50
+};
+\addplot [semithick, color1, mark=triangle*, mark size=3, mark options={solid}]
+table {%
+0.0001 74
+0.0005 75
+0.001 50
+0.005 50
+0.01 50
+0.05 50
+0.1 50
+0.5 50
+1 50
+5 50
+10 50
+};
+\addplot [semithick, color2, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+0.0001 78
+0.0005 74.5
+0.001 74
+0.005 72.5
+0.01 75
+0.05 78
+0.1 50
+0.5 50
+1 50
+5 50
+10 50
+};
+\addplot [semithick, color3, mark=x, mark size=3, mark options={solid}]
+table {%
+0.0001 72
+0.0005 72
+0.001 72
+0.005 72
+0.01 72
+0.05 72
+0.1 72
+0.5 72
+1 72
+5 72
+10 72
+};
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,189 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}[scale=\scaleepsilonW]
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+log basis x={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Class regularization \(\displaystyle \eta{}\) of OTDA},
+xmin=5.62341325190349e-05, xmax=17.7827941003892,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Target accuracy},
+ymin=47.624105458271, ymax=99.893785376309,
+ytick style={color=black}
+]
+\path [fill=color0, fill opacity=0.2]
+(axis cs:0.0001,96.38210916542)
+--(axis cs:0.0001,97.51789083458)
+--(axis cs:0.0005,97.2)
+--(axis cs:0.001,97)
+--(axis cs:0.005,97.2)
+--(axis cs:0.01,92.9440306508911)
+--(axis cs:0.05,82.5165151389912)
+--(axis cs:0.1,82.0810249675907)
+--(axis cs:0.5,81.1881943016134)
+--(axis cs:1,80.7797958971133)
+--(axis cs:5,82.8736102527122)
+--(axis cs:10,82.8874342087038)
+--(axis cs:10,80.5125657912962)
+--(axis cs:10,80.5125657912962)
+--(axis cs:5,80.6263897472878)
+--(axis cs:1,78.8202041028867)
+--(axis cs:0.5,77.8118056983866)
+--(axis cs:0.1,80.5189750324093)
+--(axis cs:0.05,80.6834848610088)
+--(axis cs:0.01,90.8559693491089)
+--(axis cs:0.005,96.9)
+--(axis cs:0.001,97)
+--(axis cs:0.0005,96.9)
+--(axis cs:0.0001,96.38210916542)
+--cycle;
+
+\path [fill=color1, fill opacity=0.2]
+(axis cs:0.0001,83)
+--(axis cs:0.0001,83)
+--(axis cs:0.0005,81)
+--(axis cs:0.001,50)
+--(axis cs:0.005,50)
+--(axis cs:0.01,50)
+--(axis cs:0.05,50)
+--(axis cs:0.1,50)
+--(axis cs:0.5,50)
+--(axis cs:1,50)
+--(axis cs:5,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:5,50)
+--(axis cs:1,50)
+--(axis cs:0.5,50)
+--(axis cs:0.1,50)
+--(axis cs:0.05,50)
+--(axis cs:0.01,50)
+--(axis cs:0.005,50)
+--(axis cs:0.001,50)
+--(axis cs:0.0005,81)
+--(axis cs:0.0001,83)
+--cycle;
+
+\path [fill=color2, fill opacity=0.2]
+(axis cs:0.0001,83.5)
+--(axis cs:0.0001,83.5)
+--(axis cs:0.0005,78)
+--(axis cs:0.001,77)
+--(axis cs:0.005,80.5)
+--(axis cs:0.01,81)
+--(axis cs:0.05,81.5)
+--(axis cs:0.1,50)
+--(axis cs:0.5,50)
+--(axis cs:1,50)
+--(axis cs:5,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:10,50)
+--(axis cs:5,50)
+--(axis cs:1,50)
+--(axis cs:0.5,50)
+--(axis cs:0.1,50)
+--(axis cs:0.05,81.5)
+--(axis cs:0.01,81)
+--(axis cs:0.005,80.5)
+--(axis cs:0.001,77)
+--(axis cs:0.0005,78)
+--(axis cs:0.0001,83.5)
+--cycle;
+
+\path [fill=color3, fill opacity=0.2]
+(axis cs:0.0001,77)
+--(axis cs:0.0001,77)
+--(axis cs:0.0005,77)
+--(axis cs:0.001,77)
+--(axis cs:0.005,77)
+--(axis cs:0.01,77)
+--(axis cs:0.05,77)
+--(axis cs:0.1,77)
+--(axis cs:0.5,77)
+--(axis cs:1,77)
+--(axis cs:5,77)
+--(axis cs:10,77)
+--(axis cs:10,77)
+--(axis cs:10,77)
+--(axis cs:5,77)
+--(axis cs:1,77)
+--(axis cs:0.5,77)
+--(axis cs:0.1,77)
+--(axis cs:0.05,77)
+--(axis cs:0.01,77)
+--(axis cs:0.005,77)
+--(axis cs:0.001,77)
+--(axis cs:0.0005,77)
+--(axis cs:0.0001,77)
+--cycle;
+
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+0.0001 96.95
+0.0005 97.05
+0.001 97
+0.005 97.05
+0.01 91.9
+0.05 81.6
+0.1 81.3
+0.5 79.5
+1 79.8
+5 81.75
+10 81.7
+};
+\addplot [semithick, color1, mark=triangle*, mark size=3, mark options={solid}]
+table {%
+0.0001 83
+0.0005 81
+0.001 50
+0.005 50
+0.01 50
+0.05 50
+0.1 50
+0.5 50
+1 50
+5 50
+10 50
+};
+\addplot [semithick, color2, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+0.0001 83.5
+0.0005 78
+0.001 77
+0.005 80.5
+0.01 81
+0.05 81.5
+0.1 50
+0.5 50
+1 50
+5 50
+10 50
+};
+\addplot [semithick, color3, mark=x, mark size=3, mark options={solid}]
+table {%
+0.0001 77
+0.0005 77
+0.001 77
+0.005 77
+0.01 77
+0.05 77
+0.1 77
+0.5 77
+1 77
+5 77
+10 77
+};
+\end{axis}
+
+\end{tikzpicture}

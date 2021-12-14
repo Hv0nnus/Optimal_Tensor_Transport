@@ -313,25 +313,25 @@ def OTT(p, q,
         The second ([1,2]) correspond to a Co-Ot problem with 2 differents OT plans, also differentes from the first one.
         The third ([0,0,1]) list correspond to a OTT problems with two times the first transport plan and the .
         T: List of initials transport plans.
-        alpha:
-        nb_iter:
-        nb_samples:
-        nb_samples_t:
-        epsilon:
-        KL:
-        L2:
-        labels_s:
-        labels_t:
-        eta:
-        log:
-        sliced:
-        learning_step:
-        verbose:
-        sparse_T:
-        threshold:
-        time_print:
-        sample_t_only_init:
-        sample_t_init_and_iteration:
+        alpha: List of weights associated with each OTT problems
+        nb_iter: Number of iteration of the Mirror Descent algorithm
+        nb_samples: List of the number of samples of the gradient for each OTT problems
+        nb_samples_t: Additional samples that can be used in HDA, when the labels in the second tensors are known
+        epsilon: Entropy regularization term, Sinkhorn method.
+        KL: KL regularization terms, should be 0 or 1 and the importance is tuned with epsilon.
+        L2: L2 prior and optimization
+        labels_s: List of source labels in the DA case
+        labels_t: List of target labels in the DA case
+        eta: OTDA regularization
+        log: log
+        sliced: Not implemented
+        learning_step: Partial udpate between the previous iteration and the new plan.
+        verbose: Display some informations
+        sparse_T: Not implemented
+        threshold: threshold that stop the algorithm if the plan does not change enough
+        time_print: Print the timer
+        sample_t_only_init: Sample using the available target label only for the initialization
+        sample_t_init_and_iteration: Sample using the available target label every time
 
     Returns: An approximation of the real Transport Plan of the OTT problem.
 
